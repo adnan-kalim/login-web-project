@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>Validate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/validate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Welcome</servlet-name>
+        <servlet-class>Welcome</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Welcome</servlet-name>
+        <url-pattern>/Welcome</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>forgot</servlet-name>
+        <servlet-class>forgot</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>forgot</servlet-name>
+        <url-pattern>/forgotPass</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>check</servlet-name>
+        <servlet-class>check</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>check</servlet-name>
+        <url-pattern>/checkOTP</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>signup</servlet-name>
+        <servlet-class>addnew</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signup</servlet-name>
+        <url-pattern>/addnew</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>newpassword</servlet-name>
+        <servlet-class>resetPass</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>newpassword</servlet-name>
+        <url-pattern>/resetpass</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>userInfo</servlet-name>
+        <servlet-class>userInfo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userInfo</servlet-name>
+        <url-pattern>/userinfo</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>forgotservlet</servlet-name>
+        <servlet-class>forgotServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>forgotservlet</servlet-name>
+        <url-pattern>/userforgot</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
+

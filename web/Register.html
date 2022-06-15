@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Forgot Password</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <script>
+        $(document).ready(function(){
+          $("#b1").click(function(){
+            function(data,status){
+                $("#result").text(data)
+            });
+          });
+        });
+    </script>
+    
+    <body>
+        <div>
+                Enter New Password : <input id="pass" type="text">
+                <button id="b1">Ok</button>
+        </div>
+    </body>
+</html>
